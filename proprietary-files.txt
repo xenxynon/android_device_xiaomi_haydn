@@ -1463,7 +1463,7 @@ vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
 vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
 
 # WiFi Display
-system/framework/WfdCommon.jar
+system/framework/WfdCommon.jar;BOOT_JAR
 system_ext/bin/wfdservice64
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml

@@ -454,7 +454,3 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi symlinks
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
-
-# Wfd
-PRODUCT_BOOT_JARS += \
-    WfdCommon
