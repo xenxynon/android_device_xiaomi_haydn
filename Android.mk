@@ -6,7 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter haydn lisa mars odin redwood renoir star venus,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
@@ -35,5 +34,3 @@ ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT)
 ALL_DEFAULT_INSTALLED_MODULES += $(BT_FIRMWARE_MOUNT_POINT)
 ALL_DEFAULT_INSTALLED_MODULES += $(DSP_MOUNT_POINT)
 ALL_DEFAULT_INSTALLED_MODULES += $(VM_SYSTEM_MOUNT_POINT)
-
-endif
