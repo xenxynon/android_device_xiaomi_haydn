@@ -86,6 +86,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcrypto_shim.so'),
     'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
+    ('vendor/lib64/hw/com.qti.chi.override.so',
+     'vendor/lib64/hw/camera.qcom.so',
+     'vendor/lib64/libmialgoengine.so',
+     ): blob_fixup().add_needed('libprocessgroup_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
