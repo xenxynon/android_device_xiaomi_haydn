@@ -448,3 +448,10 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi symlinks
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+# hax
+PRODUCT_SYSTEM_PROPERTIES += \
+	ro.adb.secure=0 \
+        ro.debuggable=1 \
+	ro.force.debuggable=1 \
+        persist.sys.usb.config=adb \
